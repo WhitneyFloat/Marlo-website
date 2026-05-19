@@ -9,14 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 
-/* \uc0\u9472 \u9472  CABINET GROTESK \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-@font-face \{
+/* ─ ─  CABINET GROTESK ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+@font-face {
   font-family: 'Cabinet Grotesk';
   src: url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400,300&display=swap');
-\}
+}
 
-/* \uc0\u9472 \u9472  TOKENS \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-:root \{
+/* ─ ─  TOKENS ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+:root {
   --ink:         #1A1917;
   --ink-soft:    #2C2B28;
   --cream:       #F8F4EE;
@@ -34,22 +34,22 @@
   --f-display:   'Cormorant Garamond', Georgia, serif;
   --f-grotesk:   'Cabinet Grotesk', 'DM Sans', system-ui, sans-serif;
   --f-body:      'DM Sans', system-ui, sans-serif;
-\}
+}
 
-/* \uc0\u9472 \u9472  RESET \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-*, *::before, *::after \{ box-sizing: border-box; margin: 0; padding: 0; \}
-html \{ scroll-behavior: smooth; \}
-body \{
+/* ─ ─  RESET ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
   background: var(--ink);
   color: var(--cream);
   font-family: var(--f-body);
   font-weight: 300;
   overflow-x: hidden;
   cursor: none;
-\}
+}
 
-/* \uc0\u9472 \u9472  CUSTOM CURSOR \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-.cursor \{
+/* ─ ─  CUSTOM CURSOR ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+.cursor {
   position: fixed;
   width: 10px; height: 10px;
   background: var(--terra);
@@ -58,8 +58,8 @@ body \{
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: width 0.3s ease, height 0.3s ease;
-\}
-.cursor-ring \{
+}
+.cursor-ring {
   position: fixed;
   width: 36px; height: 36px;
   border: 1px solid rgba(196,96,58,0.4);
@@ -68,14 +68,14 @@ body \{
   z-index: 9998;
   transform: translate(-50%, -50%);
   transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
-\}
+}
 body:has(a:hover) .cursor,
-body:has(button:hover) .cursor \{ width: 16px; height: 16px; \}
+body:has(button:hover) .cursor { width: 16px; height: 16px; }
 body:has(a:hover) .cursor-ring,
-body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: rgba(196,96,58,0.65); \}
+body:has(button:hover) .cursor-ring { width: 52px; height: 52px; border-color: rgba(196,96,58,0.65); }
 
-/* \uc0\u9472 \u9472  GRAIN \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-.grain \{
+/* ─ ─  GRAIN ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+.grain {
   position: fixed;
   inset: -200%;
   width: 400%; height: 400%;
@@ -84,25 +84,25 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   pointer-events: none;
   z-index: 50;
   animation: grain-shift 8s steps(10) infinite;
-\}
-@keyframes grain-shift \{
-  0%   \{ transform: translate(0,0); \}
-  10%  \{ transform: translate(-2%,-3%); \}
-  20%  \{ transform: translate(1%,2%); \}
-  30%  \{ transform: translate(-3%,1%); \}
-  40%  \{ transform: translate(2%,-2%); \}
-  50%  \{ transform: translate(-1%,3%); \}
-  60%  \{ transform: translate(3%,-1%); \}
-  70%  \{ transform: translate(-2%,2%); \}
-  80%  \{ transform: translate(1%,-3%); \}
-  90%  \{ transform: translate(-3%,2%); \}
-  100% \{ transform: translate(0,0); \}
-\}
+}
+@keyframes grain-shift {
+  0%   { transform: translate(0,0); }
+  10%  { transform: translate(-2%,-3%); }
+  20%  { transform: translate(1%,2%); }
+  30%  { transform: translate(-3%,1%); }
+  40%  { transform: translate(2%,-2%); }
+  50%  { transform: translate(-1%,3%); }
+  60%  { transform: translate(3%,-1%); }
+  70%  { transform: translate(-2%,2%); }
+  80%  { transform: translate(1%,-3%); }
+  90%  { transform: translate(-3%,2%); }
+  100% { transform: translate(0,0); }
+}
 
-/* \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 
+/* ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
    SECTION 1 — COVER
-\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  */
-.cover \{
+═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  */
+.cover {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -111,26 +111,26 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   position: relative;
   overflow: hidden;
   background: var(--ink);
-\}
-.cover-glow \{
+}
+.cover-glow {
   position: absolute;
   top: -30%; left: -20%;
   width: 80vw; height: 80vw;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(107,158,112,0.09) 0%, transparent 65%);
   pointer-events: none;
-\}
-.cover-glow-2 \{
+}
+.cover-glow-2 {
   position: absolute;
   bottom: -20%; right: -10%;
   width: 60vw; height: 60vw;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(196,96,58,0.055) 0%, transparent 65%);
   pointer-events: none;
-\}
+}
 
 /* Top bar */
-.cover-top \{
+.cover-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,37 +138,37 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   z-index: 2;
   opacity: 0;
   animation: rise 0.9s ease 0.2s forwards;
-\}
-.wordmark \{
+}
+.wordmark {
   display: flex;
   align-items: baseline;
-\}
-.wordmark-text \{
+}
+.wordmark-text {
   font-family: var(--f-grotesk);
   font-size: 21px;
   font-weight: 500;
   color: var(--cream);
   letter-spacing: -0.03em;
-\}
-.wordmark-dot \{
+}
+.wordmark-dot {
   width: 5px; height: 5px;
   border-radius: 50%;
   background: var(--terra);
   margin-left: 4px;
   margin-bottom: 1px;
   flex-shrink: 0;
-\}
-.cover-top-right \{
+}
+.cover-top-right {
   font-family: var(--f-grotesk);
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--stone);
-\}
+}
 
 /* Center */
-.cover-center \{
+.cover-center {
   position: relative;
   z-index: 2;
   flex: 1;
@@ -176,8 +176,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   flex-direction: column;
   justify-content: center;
   padding: 32px 0 24px;
-\}
-.cover-kicker \{
+}
+.cover-kicker {
   font-family: var(--f-grotesk);
   font-size: 11px;
   font-weight: 500;
@@ -190,16 +190,16 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   gap: 14px;
   opacity: 0;
   animation: rise 0.9s ease 0.5s forwards;
-\}
-.cover-kicker::before \{
+}
+.cover-kicker::before {
   content: '';
   width: 32px; height: 1px;
   background: var(--sage);
   flex-shrink: 0;
-\}
+}
 
-/* \uc0\u9472 \u9472  THE HERO HEADLINE \u9472 \u9472  */
-.cover-headline \{
+/* ─ ─  THE HERO HEADLINE ─ ─  */
+.cover-headline {
   font-family: var(--f-display);
   font-size: clamp(52px, 8vw, 124px);
   font-weight: 300;
@@ -209,27 +209,27 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   margin-bottom: 0;
   opacity: 0;
   animation: rise 1.1s ease 0.4s forwards;
-\}
-.cover-headline .grotesk-word \{
+}
+.cover-headline .grotesk-word {
   font-family: var(--f-grotesk);
   font-weight: 700;
   font-size: clamp(48px, 7.5vw, 116px);
   color: var(--sage-light);
   letter-spacing: -0.04em;
   display: block;
-\}
-.cover-headline .italic-line \{
+}
+.cover-headline .italic-line {
   font-style: italic;
   color: var(--cream);
   display: block;
-\}
-.cover-headline .terra-word \{
+}
+.cover-headline .terra-word {
   color: var(--terra-light);
   font-style: italic;
-\}
+}
 
 /* Sub — body + scroll indicator */
-.cover-sub \{
+.cover-sub {
   margin-top: 44px;
   display: flex;
   align-items: flex-end;
@@ -237,19 +237,19 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   gap: 40px;
   opacity: 0;
   animation: rise 0.9s ease 0.8s forwards;
-\}
-.cover-sub-text \{
+}
+.cover-sub-text {
   font-size: 15px;
   font-weight: 300;
   color: rgba(248,244,238,0.5);
   line-height: 1.75;
   max-width: 380px;
-\}
-.cover-sub-text strong \{
+}
+.cover-sub-text strong {
   color: var(--cream);
   font-weight: 400;
-\}
-.scroll-prompt \{
+}
+.scroll-prompt {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,19 +260,19 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   text-transform: uppercase;
   color: var(--stone);
   flex-shrink: 0;
-\}
-.scroll-line \{
+}
+.scroll-line {
   width: 1px; height: 44px;
   background: linear-gradient(to bottom, var(--stone), transparent);
   animation: scroll-bob 2s ease-in-out infinite;
-\}
-@keyframes scroll-bob \{
-  0%, 100% \{ transform: scaleY(1); opacity: 0.5; \}
-  50% \{ transform: scaleY(1.35); opacity: 1; \}
-\}
+}
+@keyframes scroll-bob {
+  0%, 100% { transform: scaleY(1); opacity: 0.5; }
+  50% { transform: scaleY(1.35); opacity: 1; }
+}
 
 /* Bottom */
-.cover-bottom \{
+.cover-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -280,8 +280,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   z-index: 2;
   opacity: 0;
   animation: rise 0.9s ease 1s forwards;
-\}
-.launch-badge \{
+}
+.launch-badge {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -289,15 +289,15 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   border-radius: 100px;
   border: 1px solid rgba(107,158,112,0.25);
   background: rgba(107,158,112,0.08);
-\}
-.badge-pulse \{
+}
+.badge-pulse {
   width: 7px; height: 7px;
   border-radius: 50%;
   background: var(--sage-light);
   position: relative;
   flex-shrink: 0;
-\}
-.badge-pulse::after \{
+}
+.badge-pulse::after {
   content: '';
   position: absolute;
   inset: -4px;
@@ -305,49 +305,49 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   background: var(--sage);
   opacity: 0;
   animation: badge-ring 2.4s ease-in-out infinite;
-\}
-@keyframes badge-ring \{
-  0% \{ transform: scale(1); opacity: 0.4; \}
-  100% \{ transform: scale(2.2); opacity: 0; \}
-\}
-.badge-text \{
+}
+@keyframes badge-ring {
+  0% { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.badge-text {
   font-family: var(--f-grotesk);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.06em;
   color: var(--sage-light);
-\}
-.cover-city \{
+}
+.cover-city {
   font-family: var(--f-display);
   font-size: 14px;
   font-style: italic;
   color: var(--stone);
   letter-spacing: 0.04em;
-\}
+}
 
-@keyframes rise \{
-  from \{ opacity: 0; transform: translateY(24px); \}
-  to   \{ opacity: 1; transform: translateY(0); \}
-\}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
 /* terra rule */
-.rule \{
+.rule {
   height: 1px;
   background: linear-gradient(90deg, var(--terra) 0%, rgba(196,96,58,0.25) 50%, transparent 100%);
-\}
+}
 
-/* \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 
+/* ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
    SECTION 2 — PLATFORM + CITY (merged)
-\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  */
-.mid \{
+═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  */
+.mid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100svh;
   position: relative;
-\}
+}
 
-/* \uc0\u9472 \u9472  LEFT: Platform / What Marlo Is \u9472 \u9472  */
-.mid-left \{
+/* ─ ─  LEFT: Platform / What Marlo Is ─ ─  */
+.mid-left {
   background: var(--cream);
   padding: 80px 64px 80px 56px;
   display: flex;
@@ -355,9 +355,9 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   justify-content: center;
   border-right: 1px solid var(--stone-pale);
   position: relative;
-\}
+}
 
-.mid-label \{
+.mid-label {
   font-family: var(--f-grotesk);
   font-size: 10px;
   font-weight: 500;
@@ -368,15 +368,15 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   display: flex;
   align-items: center;
   gap: 12px;
-\}
-.mid-label::before \{
+}
+.mid-label::before {
   content: '';
   width: 20px; height: 1px;
   background: var(--sage);
   flex-shrink: 0;
-\}
+}
 
-.mid-headline \{
+.mid-headline {
   font-family: var(--f-display);
   font-size: clamp(36px, 3.8vw, 60px);
   font-weight: 300;
@@ -384,8 +384,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   line-height: 1.08;
   letter-spacing: -0.025em;
   margin-bottom: 24px;
-\}
-.mid-headline .grotesk-strong \{
+}
+.mid-headline .grotesk-strong {
   font-family: var(--f-grotesk);
   font-weight: 700;
   font-size: clamp(32px, 3.4vw, 54px);
@@ -393,19 +393,19 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   letter-spacing: -0.04em;
   display: block;
   line-height: 1;
-\}
-.mid-headline em \{ font-style: italic; color: var(--terra); \}
+}
+.mid-headline em { font-style: italic; color: var(--terra); }
 
-.mid-body \{
+.mid-body {
   font-size: 15px;
   color: var(--stone);
   line-height: 1.8;
   max-width: 400px;
   margin-bottom: 40px;
-\}
+}
 
 /* Quote */
-.mid-quote \{
+.mid-quote {
   font-family: var(--f-display);
   font-size: clamp(20px, 2vw, 30px);
   font-weight: 300;
@@ -415,25 +415,25 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   border-left: 2px solid var(--sage);
   padding-left: 24px;
   margin-bottom: 40px;
-\}
-.mid-quote strong \{
+}
+.mid-quote strong {
   font-style: normal;
   font-family: var(--f-grotesk);
   font-weight: 700;
   font-size: clamp(18px, 1.8vw, 26px);
   color: var(--sage-deep);
   letter-spacing: -0.03em;
-\}
+}
 
 /* Accordion — What Marlo Is */
-.accordion \{
+.accordion {
   border-top: 1px solid var(--stone-pale);
-\}
-.acc-item \{
+}
+.acc-item {
   border-bottom: 1px solid var(--stone-pale);
   overflow: hidden;
-\}
-.acc-trigger \{
+}
+.acc-trigger {
   width: 100%;
   background: none;
   border: none;
@@ -444,28 +444,28 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   cursor: none;
   text-align: left;
   transition: background 0.2s;
-\}
-.acc-trigger:hover \{ background: rgba(107,158,112,0.04); \}
-.acc-trigger-left \{
+}
+.acc-trigger:hover { background: rgba(107,158,112,0.04); }
+.acc-trigger-left {
   display: flex;
   align-items: center;
   gap: 16px;
-\}
-.acc-num \{
+}
+.acc-num {
   font-family: var(--f-grotesk);
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.18em;
   color: var(--sage);
-\}
-.acc-title \{
+}
+.acc-title {
   font-family: var(--f-grotesk);
   font-size: 15px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.01em;
-\}
-.acc-arrow \{
+}
+.acc-arrow {
   width: 20px; height: 20px;
   border: 1px solid var(--stone-pale);
   border-radius: 50%;
@@ -474,32 +474,32 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   justify-content: center;
   flex-shrink: 0;
   transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), background 0.2s, border-color 0.2s;
-\}
-.acc-arrow svg \{
+}
+.acc-arrow svg {
   width: 10px; height: 10px;
   stroke: var(--stone);
   transition: stroke 0.2s;
-\}
-.acc-item.open .acc-arrow \{
+}
+.acc-item.open .acc-arrow {
   transform: rotate(45deg);
   background: var(--sage);
   border-color: var(--sage);
-\}
-.acc-item.open .acc-arrow svg \{ stroke: white; \}
-.acc-body \{
+}
+.acc-item.open .acc-arrow svg { stroke: white; }
+.acc-body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.45s cubic-bezier(0.22,1,0.36,1);
-\}
-.acc-body-inner \{
+}
+.acc-body-inner {
   padding: 0 0 20px 42px;
   font-size: 14px;
   color: var(--stone);
   line-height: 1.75;
-\}
+}
 
-/* \uc0\u9472 \u9472  RIGHT: City \u9472 \u9472  */
-.mid-right \{
+/* ─ ─  RIGHT: City ─ ─  */
+.mid-right {
   background: var(--sage);
   padding: 80px 56px 80px 64px;
   display: flex;
@@ -507,8 +507,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   justify-content: center;
   position: relative;
   overflow: hidden;
-\}
-.mid-right::before \{
+}
+.mid-right::before {
   content: '';
   position: absolute;
   top: -80px; right: -80px;
@@ -516,8 +516,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   border-radius: 50%;
   background: rgba(255,255,255,0.06);
   pointer-events: none;
-\}
-.mid-right::after \{
+}
+.mid-right::after {
   content: '';
   position: absolute;
   bottom: -60px; left: -60px;
@@ -525,9 +525,9 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   border-radius: 50%;
   background: rgba(61,107,65,0.45);
   pointer-events: none;
-\}
+}
 
-.city-label \{
+.city-label {
   font-family: var(--f-grotesk);
   font-size: 10px;
   font-weight: 500;
@@ -540,14 +540,14 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   gap: 12px;
   position: relative;
   z-index: 1;
-\}
-.city-label::before \{
+}
+.city-label::before {
   content: '';
   width: 20px; height: 1px;
   background: rgba(255,255,255,0.35);
-\}
+}
 
-.city-headline \{
+.city-headline {
   font-family: var(--f-display);
   font-size: clamp(40px, 4.8vw, 76px);
   font-weight: 300;
@@ -557,8 +557,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   margin-bottom: 24px;
   position: relative;
   z-index: 1;
-\}
-.city-headline .city-grotesk \{
+}
+.city-headline .city-grotesk {
   font-family: var(--f-grotesk);
   font-weight: 800;
   font-size: clamp(36px, 4.4vw, 70px);
@@ -566,10 +566,10 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   letter-spacing: -0.04em;
   color: white;
   line-height: 1;
-\}
-.city-headline em \{ font-style: italic; color: rgba(255,255,255,0.55); \}
+}
+.city-headline em { font-style: italic; color: rgba(255,255,255,0.55); }
 
-.city-body \{
+.city-body {
   font-size: 14px;
   color: rgba(255,255,255,0.6);
   line-height: 1.8;
@@ -577,14 +577,14 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   max-width: 340px;
   position: relative;
   z-index: 1;
-\}
+}
 
 /* Hood list */
-.city-hoods \{
+.city-hoods {
   position: relative;
   z-index: 1;
-\}
-.city-hood \{
+}
+.city-hood {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -593,25 +593,25 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   position: relative;
   overflow: hidden;
   cursor: default;
-\}
-.city-hood::before \{
+}
+.city-hood::before {
   content: '';
   position: absolute;
   left: 0; top: 0; bottom: 0;
   width: 0;
   background: rgba(255,255,255,0.06);
   transition: width 0.4s ease;
-\}
-.city-hood:hover::before \{ width: 100%; \}
-.hood-name \{
+}
+.city-hood:hover::before { width: 100%; }
+.hood-name {
   font-family: var(--f-display);
   font-size: clamp(18px, 1.8vw, 26px);
   font-weight: 300;
   color: white;
   position: relative;
   z-index: 1;
-\}
-.hood-meta \{
+}
+.hood-meta {
   font-family: var(--f-grotesk);
   font-size: 10px;
   font-weight: 500;
@@ -620,8 +620,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   color: rgba(255,255,255,0.35);
   position: relative;
   z-index: 1;
-\}
-.hood-status \{
+}
+.hood-status {
   font-family: var(--f-grotesk);
   font-size: 10px;
   font-weight: 500;
@@ -632,22 +632,22 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   display: flex;
   align-items: center;
   gap: 6px;
-\}
-.hood-status::before \{
+}
+.hood-status::before {
   content: '';
   width: 5px; height: 5px;
   border-radius: 50%;
   flex-shrink: 0;
-\}
-.hood-status.launch \{ color: white; \}
-.hood-status.launch::before \{ background: white; \}
-.hood-status.coming \{ color: rgba(255,255,255,0.4); \}
-.hood-status.coming::before \{ background: rgba(255,255,255,0.3); \}
+}
+.hood-status.launch { color: white; }
+.hood-status.launch::before { background: white; }
+.hood-status.coming { color: rgba(255,255,255,0.4); }
+.hood-status.coming::before { background: rgba(255,255,255,0.3); }
 
-/* \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 
+/* ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
    SECTION 3 — WAITLIST
-\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  */
-.waitlist \{
+═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  */
+.waitlist {
   background: var(--ink);
   min-height: 100svh;
   display: flex;
@@ -658,8 +658,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   text-align: center;
   position: relative;
   overflow: hidden;
-\}
-.waitlist-glow \{
+}
+.waitlist-glow {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -667,37 +667,37 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   border-radius: 50%;
   background: radial-gradient(circle, rgba(107,158,112,0.07) 0%, transparent 60%);
   pointer-events: none;
-\}
-.waitlist-glow-terra \{
+}
+.waitlist-glow-terra {
   position: absolute;
   bottom: -20%; right: -10%;
   width: 50vw; height: 50vw;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(196,96,58,0.05) 0%, transparent 60%);
   pointer-events: none;
-\}
-.waitlist-inner \{
+}
+.waitlist-inner {
   position: relative;
   z-index: 1;
   max-width: 680px;
   width: 100%;
-\}
+}
 
 /* Big wordmark */
-.wl-wordmark \{
+.wl-wordmark {
   display: inline-flex;
   align-items: baseline;
   margin-bottom: 32px;
-\}
-.wl-wordmark-text \{
+}
+.wl-wordmark-text {
   font-family: var(--f-grotesk);
   font-size: clamp(28px, 3.2vw, 44px);
   font-weight: 500;
   color: var(--cream);
   letter-spacing: -0.03em;
   line-height: 1;
-\}
-.wl-wordmark-dot \{
+}
+.wl-wordmark-dot {
   width: clamp(5px, 0.6vw, 8px);
   height: clamp(5px, 0.6vw, 8px);
   border-radius: 50%;
@@ -705,8 +705,8 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   margin-left: clamp(3px, 0.4vw, 5px);
   margin-bottom: clamp(1px, 0.15vw, 2px);
   flex-shrink: 0;
-\}
-.wl-headline \{
+}
+.wl-headline {
   font-family: var(--f-display);
   font-size: clamp(28px, 3.8vw, 52px);
   font-weight: 300;
@@ -715,15 +715,15 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   line-height: 1.22;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
-\}
-.wl-headline .grotesk-pop \{
+}
+.wl-headline .grotesk-pop {
   font-family: var(--f-grotesk);
   font-style: normal;
   font-weight: 700;
   color: var(--sage-light);
   letter-spacing: -0.04em;
-\}
-.wl-sub \{
+}
+.wl-sub {
   font-size: 15px;
   color: rgba(248,244,238,0.42);
   line-height: 1.78;
@@ -731,10 +731,10 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;
-\}
+}
 
 /* Form */
-.wl-form \{
+.wl-form {
   width: 100%;
   max-width: 480px;
   margin: 0 auto 16px;
@@ -745,12 +745,12 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   border-radius: 100px;
   padding: 6px 6px 6px 28px;
   transition: border-color 0.3s, background 0.3s;
-\}
-.wl-form:focus-within \{
+}
+.wl-form:focus-within {
   border-color: rgba(107,158,112,0.4);
   background: rgba(255,255,255,0.08);
-\}
-.wl-input \{
+}
+.wl-input {
   flex: 1;
   background: none;
   border: none;
@@ -760,9 +760,9 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   font-weight: 300;
   color: var(--cream);
   min-width: 0;
-\}
-.wl-input::placeholder \{ color: rgba(248,244,238,0.28); \}
-.wl-btn \{
+}
+.wl-input::placeholder { color: rgba(248,244,238,0.28); }
+.wl-btn {
   flex-shrink: 0;
   padding: 14px 24px;
   border-radius: 100px;
@@ -775,20 +775,20 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   letter-spacing: 0.04em;
   cursor: none;
   transition: background 0.25s, transform 0.2s;
-\}
-.wl-btn:hover \{ background: var(--sage-deep); transform: scale(1.02); \}
+}
+.wl-btn:hover { background: var(--sage-deep); transform: scale(1.02); }
 
-.wl-note \{
+.wl-note {
   font-family: var(--f-grotesk);
   font-size: 12px;
   letter-spacing: 0.06em;
   color: rgba(248,244,238,0.22);
   margin-bottom: 64px;
-\}
-.wl-note span \{ color: rgba(248,244,238,0.38); \}
+}
+.wl-note span { color: rgba(248,244,238,0.38); }
 
 /* Stats */
-.wl-stats \{
+.wl-stats {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -797,15 +797,15 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   border: 1px solid rgba(255,255,255,0.07);
   border-radius: 16px;
   overflow: hidden;
-\}
-.wl-stat \{
+}
+.wl-stat {
   flex: 1;
   padding: 26px 16px;
   text-align: center;
   border-right: 1px solid rgba(255,255,255,0.07);
-\}
-.wl-stat:last-child \{ border-right: none; \}
-.wl-stat-val \{
+}
+.wl-stat:last-child { border-right: none; }
+.wl-stat-val {
   font-family: var(--f-grotesk);
   font-size: clamp(26px, 3.5vw, 40px);
   font-weight: 700;
@@ -813,15 +813,15 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   letter-spacing: -0.04em;
   line-height: 1;
   margin-bottom: 6px;
-\}
-.wl-stat-val em \{
+}
+.wl-stat-val em {
   font-family: var(--f-display);
   font-style: italic;
   font-weight: 300;
   font-size: 0.68em;
   color: var(--terra-light);
-\}
-.wl-stat-label \{
+}
+.wl-stat-label {
   font-family: var(--f-grotesk);
   font-size: 10px;
   font-weight: 400;
@@ -829,76 +829,76 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   text-transform: uppercase;
   color: rgba(248,244,238,0.32);
   line-height: 1.5;
-\}
+}
 
-/* \uc0\u9472 \u9472  FOOTER \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-.teaser-footer \{
+/* ─ ─  FOOTER ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+.teaser-footer {
   background: var(--ink);
   border-top: 1px solid rgba(255,255,255,0.06);
   padding: 28px 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-\}
-.tf-wordmark \{ display: flex; align-items: baseline; \}
-.tf-wordmark-text \{
+}
+.tf-wordmark { display: flex; align-items: baseline; }
+.tf-wordmark-text {
   font-family: var(--f-grotesk);
   font-size: 15px;
   font-weight: 500;
   color: var(--stone);
   letter-spacing: -0.02em;
-\}
-.tf-wordmark-dot \{
+}
+.tf-wordmark-dot {
   width: 4px; height: 4px;
   border-radius: 50%;
   background: var(--terra);
   margin-left: 3px;
   margin-bottom: 1px;
   flex-shrink: 0;
-\}
-.tf-copy \{
+}
+.tf-copy {
   font-family: var(--f-grotesk);
   font-size: 11px;
   letter-spacing: 0.08em;
   color: rgba(140,132,120,0.45);
-\}
-.tf-launch \{
+}
+.tf-launch {
   font-family: var(--f-display);
   font-size: 14px;
   font-style: italic;
   color: var(--stone);
-\}
+}
 
-/* \uc0\u9472 \u9472  SCROLL REVEAL \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-.reveal \{
+/* ─ ─  SCROLL REVEAL ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+.reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.85s cubic-bezier(0.22,1,0.36,1), transform 0.85s cubic-bezier(0.22,1,0.36,1);
-\}
-.reveal.visible \{ opacity: 1; transform: translateY(0); \}
-.reveal-d1 \{ transition-delay: 0.08s; \}
-.reveal-d2 \{ transition-delay: 0.18s; \}
-.reveal-d3 \{ transition-delay: 0.28s; \}
-.reveal-d4 \{ transition-delay: 0.4s; \}
-.reveal-d5 \{ transition-delay: 0.54s; \}
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.18s; }
+.reveal-d3 { transition-delay: 0.28s; }
+.reveal-d4 { transition-delay: 0.4s; }
+.reveal-d5 { transition-delay: 0.54s; }
 
-/* \uc0\u9472 \u9472  RESPONSIVE \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  */
-@media (max-width: 900px) \{
-  body \{ cursor: auto; \}
-  .cursor, .cursor-ring \{ display: none; \}
-  .cover \{ padding: 32px 24px 40px; \}
-  .cover-sub \{ flex-direction: column; gap: 28px; align-items: flex-start; \}
-  .mid \{ grid-template-columns: 1fr; min-height: auto; \}
-  .mid-left \{ padding: 72px 24px; border-right: none; border-bottom: 1px solid var(--stone-pale); \}
-  .mid-right \{ padding: 72px 24px; \}
-  .waitlist \{ padding: 72px 24px; min-height: auto; \}
-  .wl-form \{ flex-direction: column; border-radius: 20px; padding: 16px 20px; \}
-  .wl-btn \{ border-radius: 100px; \}
-  .wl-stats \{ flex-direction: column; \}
-  .wl-stat \{ border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); \}
-  .wl-stat:last-child \{ border-bottom: none; \}
-  .teaser-footer \{ flex-direction: column; gap: 14px; padding: 24px; text-align: center; \}
-\}
+/* ─ ─  RESPONSIVE ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  */
+@media (max-width: 900px) {
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none; }
+  .cover { padding: 32px 24px 40px; }
+  .cover-sub { flex-direction: column; gap: 28px; align-items: flex-start; }
+  .mid { grid-template-columns: 1fr; min-height: auto; }
+  .mid-left { padding: 72px 24px; border-right: none; border-bottom: 1px solid var(--stone-pale); }
+  .mid-right { padding: 72px 24px; }
+  .waitlist { padding: 72px 24px; min-height: auto; }
+  .wl-form { flex-direction: column; border-radius: 20px; padding: 16px 20px; }
+  .wl-btn { border-radius: 100px; }
+  .wl-stats { flex-direction: column; }
+  .wl-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .wl-stat:last-child { border-bottom: none; }
+  .teaser-footer { flex-direction: column; gap: 14px; padding: 24px; text-align: center; }
+}
 
 </style>
 </head>
@@ -908,9 +908,9 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
 <div class="cursor" id="cursor" aria-hidden="true"></div>
 <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
-<!-- \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
      01 — COVER
-\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  -->
+═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
 <section class="cover">
   <div class="cover-glow" aria-hidden="true"></div>
   <div class="cover-glow-2" aria-hidden="true"></div>
@@ -955,9 +955,9 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
 
 <div class="rule" aria-hidden="true"></div>
 
-<!-- \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
      02 — PLATFORM + CITY
-\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  -->
+═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
 <section class="mid">
 
   <!-- LEFT: Platform -->
@@ -1109,9 +1109,9 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
 
 </section>
 
-<!-- \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ 
      03 — WAITLIST
-\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  -->
+═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
 <section class="waitlist" id="waitlist">
   <div class="waitlist-glow" aria-hidden="true"></div>
   <div class="waitlist-glow-terra" aria-hidden="true"></div>
@@ -1177,96 +1177,96 @@ body:has(button:hover) .cursor-ring \{ width: 52px; height: 52px; border-color: 
   <span class="tf-launch">Launching Summer 2026</span>
 </footer>
 
-<!-- \uc0\u9472 \u9472  SCRIPTS \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  -->
+<!-- ─ ─  SCRIPTS ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  -->
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring   = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
 
-  document.addEventListener('mousemove', e => \{
+  document.addEventListener('mousemove', e => {
     mx = e.clientX; my = e.clientY;
     cursor.style.left = mx + 'px';
     cursor.style.top  = my + 'px';
-  \});
-  (function animRing() \{
+  });
+  (function animRing() {
     rx += (mx - rx) * 0.12;
     ry += (my - ry) * 0.12;
     ring.style.left = rx + 'px';
     ring.style.top  = ry + 'px';
     requestAnimationFrame(animRing);
-  \})();
+  })();
 
   // Scroll reveal
-  const obs = new IntersectionObserver(entries => \{
-    entries.forEach(e => \{
-      if (e.isIntersecting) \{
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
         e.target.classList.add('visible');
         obs.unobserve(e.target);
-      \}
-    \});
-  \}, \{ threshold: 0.08, rootMargin: '0px 0px -32px 0px' \});
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
   // Accordion
   const items = document.querySelectorAll('.acc-item');
-  items.forEach(item => \{
+  items.forEach(item => {
     const trigger = item.querySelector('.acc-trigger');
     const body    = item.querySelector('.acc-body');
     const inner   = item.querySelector('.acc-body-inner');
 
-    trigger.addEventListener('click', () => \{
+    trigger.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
 
       // Close all
-      items.forEach(i => \{
+      items.forEach(i => {
         i.classList.remove('open');
         i.querySelector('.acc-trigger').setAttribute('aria-expanded', 'false');
         i.querySelector('.acc-body').style.maxHeight = '0';
-      \});
+      });
 
       // Open clicked if it was closed
-      if (!isOpen) \{
+      if (!isOpen) {
         item.classList.add('open');
         trigger.setAttribute('aria-expanded', 'true');
         body.style.maxHeight = inner.scrollHeight + 32 + 'px';
-      \}
-    \});
-  \});
+      }
+    });
+  });
 
   // Waitlist form
-  function handleWaitlist(e) \{
+  function handleWaitlist(e) {
     e.preventDefault();
     const btn   = document.getElementById('wl-btn');
     const note  = document.getElementById('wl-note');
     const input = document.getElementById('wl-email');
 
-    if (!input.value || !input.value.includes('@')) \{
+    if (!input.value || !input.value.includes('@')) {
       input.style.color = 'var(--terra-light)';
       setTimeout(() => input.style.color = '', 800);
       return;
-    \}
+    }
 
     btn.textContent = "Marlo's handling it...";
     btn.disabled = true;
     btn.style.background = 'rgba(107,158,112,0.5)';
 
-    setTimeout(() => \{
-      btn.textContent = "You're on the list \uc0\u10003 ";
+    setTimeout(() => {
+      btn.textContent = "You're on the list ✓ ";
       btn.style.background = 'var(--sage-deep)';
       note.innerHTML = "We'll be in touch before June. <span>Marlo's got it.</span>";
       input.value = '';
-      input.placeholder = 'See you at launch. \uc0\u55356 \u57151 ';
-    \}, 1600);
-  \}
+      input.placeholder = 'See you at launch.   ';
+    }, 1600);
+  }
 
   // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => \{
-    a.addEventListener('click', e => \{
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
       const t = document.querySelector(a.getAttribute('href'));
-      if (t) \{ e.preventDefault(); t.scrollIntoView(\{ behavior: 'smooth' \}); \}
-    \});
-  \});
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
 </script>
 </body>
 </html>
